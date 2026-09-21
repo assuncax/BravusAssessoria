@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bravus Assessoria Contábil | Contabilidade para empresas que querem crescer</title>
+<meta name="description" content="Assessoria contábil completa: contábil, fiscal, folha de pagamento, legalização, BPO financeiro, auditoria, planejamento tributário e IRPF. Diagnóstico gratuito.">
+<link rel="icon" href="assets/bravus-emblema.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tailwind.css">
+</head>
+<body class="bg-white font-sans text-steel-600 antialiased">
+
+<!-- TOPBAR -->
+<div class="hidden bg-navy-950 text-[13px] text-steel-400 md:block">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-2.5">
+    <p>Atendimento 100% digital para empresas em todo o Brasil</p>
+    <div class="flex items-center gap-6">
+      <a data-tel href="#" class="transition hover:text-white">(11) 3000-0000</a>
+      <a data-email href="#" class="transition hover:text-white">contato@bravuscontabil.com.br</a>
+      <a data-wa="Olá! Já sou cliente Bravus e preciso de um atendimento." href="#" class="transition hover:text-white">Já sou cliente</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+  <div class="mx-auto flex h-24 max-w-7xl items-center justify-between px-6">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/bravus-emblema.png" alt="" class="h-14 w-auto">
+      <span class="leading-none">
+        <span class="block font-wordmark text-[1.55rem] font-bold tracking-[0.1em] text-navy-900">BRAVUS</span>
+        <span class="mt-2 block text-[0.62rem] font-medium uppercase tracking-[0.3em] text-steel-400">Assessoria Contábil</span>
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-9 lg:flex">
+      <a href="index.html" class="text-[15px] font-medium text-navy-900">Início</a>
+      <a href="servicos.html" class="text-[15px] font-medium text-steel-600 transition hover:text-navy-900">Serviços</a>
+      <a href="sobre.html" class="text-[15px] font-medium text-steel-600 transition hover:text-navy-900">A Bravus</a>
+      <a href="index.html#faq" class="text-[15px] font-medium text-steel-600 transition hover:text-navy-900">Dúvidas</a>
+      <a href="contato.html" class="text-[15px] font-medium text-steel-600 transition hover:text-navy-900">Contato</a>
+      <a href="contato.html" class="rounded-md bg-navy-900 px-5 py-2.5 text-[14px] font-semibold text-white transition hover:bg-navy-700">Falar com um contador</a>
+    </nav>
+
+    <button id="navToggle" aria-expanded="false" aria-controls="mobileNav" class="rounded-md border border-slate-300 p-2.5 text-navy-900 lg:hidden">
+      <span class="sr-only">Abrir menu</span>
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+
+  <nav id="mobileNav" class="hidden border-t border-slate-200 bg-white lg:hidden">
+    <div class="mx-auto max-w-7xl px-6 py-3">
+      <a href="index.html" class="block border-b border-slate-100 py-3.5 font-medium text-navy-900">Início</a>
+      <a href="servicos.html" class="block border-b border-slate-100 py-3.5 font-medium text-navy-900">Serviços</a>
+      <a href="sobre.html" class="block border-b border-slate-100 py-3.5 font-medium text-navy-900">A Bravus</a>
+      <a href="index.html#faq" class="block border-b border-slate-100 py-3.5 font-medium text-navy-900">Dúvidas</a>
+      <a href="contato.html" class="block py-3.5 font-medium text-navy-900">Contato</a>
+      <a href="contato.html" class="mt-3 mb-2 block rounded-md bg-navy-900 px-5 py-3 text-center font-semibold text-white">Falar com um contador</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden bg-navy-900">
+  <div class="relative mx-auto max-w-7xl px-6">
+    <div class="grid gap-14 py-20 lg:grid-cols-12 lg:items-center lg:py-24">
+      <div class="lg:col-span-7">
+        <p class="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-accent-500">
+          <span class="h-px w-8 bg-accent-500"></span>Assessoria contábil
+        </p>
+        <h1 class="mt-6 font-display text-4xl font-semibold leading-[1.08] text-white sm:text-5xl lg:text-[3.4rem]">
+          Contabilidade com a disciplina que o seu negócio exige.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg leading-relaxed text-steel-200">
+          Da abertura da empresa ao planejamento tributário: cuidamos de toda a rotina contábil, fiscal e trabalhista para você decidir com números confiáveis — e pagar só o imposto devido.
+        </p>
+
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a data-wa="Olá! Quero um diagnóstico contábil gratuito para minha empresa." href="#"
+             class="inline-flex items-center gap-2.5 rounded-md bg-wa px-6 py-3.5 font-semibold text-[#06331A] transition hover:brightness-95">
+            <svg class="h-[18px] w-[18px]" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 01-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 012.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+            Diagnóstico gratuito
+          </a>
+          <a href="#contato" class="inline-flex items-center rounded-md border border-white/25 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10">
+            Pedir proposta
+          </a>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-steel-400">
+          <span class="flex items-center gap-2"><svg class="h-4 w-4 text-accent-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Migração sem custo</span>
+          <span class="flex items-center gap-2"><svg class="h-4 w-4 text-accent-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Contador responsável dedicado</span>
+          <span class="flex items-center gap-2"><svg class="h-4 w-4 text-accent-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Sem fidelidade</span>
+        </div>
+      </div>
+
+
+      <!-- EMBLEMA -->
+      <div class="hidden lg:col-span-5 lg:flex lg:justify-end">
+        <img src="assets/bravus-emblema.png" alt="Emblema Bravus Assessoria Contábil" class="w-full max-w-[26rem]">
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="grid grid-cols-2 gap-px border-t border-white/10 bg-white/10 lg:grid-cols-4">
+      <div class="bg-navy-900 px-2 py-8 sm:px-6">
+        <p class="font-display text-4xl font-semibold text-white">+12</p>
+        <p class="mt-1.5 text-sm text-steel-400">anos em contabilidade empresarial</p>
+      </div>
+      <div class="bg-navy-900 px-2 py-8 sm:px-6">
+        <p class="font-display text-4xl font-semibold text-white">+400</p>
+        <p class="mt-1.5 text-sm text-steel-400">empresas atendidas no país</p>
+      </div>
+      <div class="bg-navy-900 px-2 py-8 sm:px-6">
+        <p class="font-display text-4xl font-semibold text-white">98%</p>
+        <p class="mt-1.5 text-sm text-steel-400">obrigações entregues no prazo</p>
+      </div>
+      <div class="bg-navy-900 px-2 py-8 sm:px-6">
+        <p class="font-display text-4xl font-semibold text-white">24h</p>
+        <p class="mt-1.5 text-sm text-steel-400">tempo médio de resposta</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="py-24">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-8 border-b border-slate-200 pb-12 lg:grid-cols-12">
+      <div class="lg:col-span-7">
+        <p class="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-accent-600">
+          <span class="h-px w-8 bg-accent-600"></span>Nossos serviços
+        </p>
+        <h2 class="mt-5 font-display text-3xl font-semibold leading-tight text-navy-900 sm:text-4xl">
+          Toda a rotina contábil da sua empresa sob um mesmo time
+        </h2>
+      </div>
+      <div class="lg:col-span-5 lg:pt-14">
+        <p class="text-[17px] leading-relaxed">
+          Você fala com um contador dedicado. Ele aciona a equipe de cada área — e responde por todas elas.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-12 grid gap-px bg-slate-200 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- card -->
+      <article class="group flex flex-col bg-white p-8 transition hover:bg-slate-50">
+        <div class="flex items-start justify-between">
+          <svg class="h-6 w-6 text-navy-900" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>
+          <span class="font-display text-sm text-steel-200">01</span>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-navy-900">Contábil</h3>
+        <p class="mt-2.5 grow text-[15px] leading-relaxed">Registros financeiros em ordem, conciliados com o extrato e com as notas. É o que sustenta balanço aceito por banco, investidor e licitação.</p>
+        <p class="mt-6 border-t border-slate-200 pt-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-steel-400">Como podemos te atender</p>
+        <ul class="mt-3 space-y-1.5 text-[15px] text-navy-900">
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Gestão contábil</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Escrituração contábil</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Relatórios contábeis e balanço</li>
+        </ul>
+        <a href="servicos.html#contabil" class="mt-6 inline-block text-sm font-semibold text-accent-600 transition group-hover:text-accent-700">Saiba mais &rarr;</a>
+      </article>
+
+      <article class="group flex flex-col bg-white p-8 transition hover:bg-slate-50">
+        <div class="flex items-start justify-between">
+          <svg class="h-6 w-6 text-navy-900" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h4"/></svg>
+          <span class="font-display text-sm text-steel-200">02</span>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-navy-900">Fiscal</h3>
+        <p class="mt-2.5 grow text-[15px] leading-relaxed">Todas as obrigações fiscais com conferência antes do envio. Multa por atraso é problema evitável com calendário e responsável definidos.</p>
+        <p class="mt-6 border-t border-slate-200 pt-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-steel-400">Como podemos te atender</p>
+        <ul class="mt-3 space-y-1.5 text-[15px] text-navy-900">
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Apuração de impostos</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Emissão de guias e acessórias</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Emissão e conferência de NF</li>
+        </ul>
+        <a href="servicos.html#fiscal" class="mt-6 inline-block text-sm font-semibold text-accent-600 transition group-hover:text-accent-700">Saiba mais &rarr;</a>
+      </article>
+
+      <article class="group flex flex-col bg-white p-8 transition hover:bg-slate-50">
+        <div class="flex items-start justify-between">
+          <svg class="h-6 w-6 text-navy-900" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/></svg>
+          <span class="font-display text-sm text-steel-200">03</span>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-navy-900">Folha de pagamento</h3>
+        <p class="mt-2.5 grow text-[15px] leading-relaxed">Gerenciamos a folha do registro à rescisão, aplicando a convenção coletiva da sua categoria. É onde o passivo trabalhista nasce.</p>
+        <p class="mt-6 border-t border-slate-200 pt-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-steel-400">Como podemos te atender</p>
+        <ul class="mt-3 space-y-1.5 text-[15px] text-navy-900">
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Elaboração da folha e guias</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Obrigações acessórias e eSocial</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Contratações, férias e rescisões</li>
+        </ul>
+        <a href="servicos.html#folha" class="mt-6 inline-block text-sm font-semibold text-accent-600 transition group-hover:text-accent-700">Saiba mais &rarr;</a>
+      </article>
+
+      <article class="group flex flex-col bg-white p-8 transition hover:bg-slate-50">
+        <div class="flex items-start justify-between">
+          <svg class="h-6 w-6 text-navy-900" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-5h6v5"/></svg>
+          <span class="font-display text-sm text-steel-200">04</span>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-navy-900">Legalização e societário</h3>
+        <p class="mt-2.5 grow text-[15px] leading-relaxed">Trâmites legais da empresa, da viabilidade ao alvará. O erro mais caro acontece antes do primeiro faturamento: CNAE mal escolhido ou regime errado.</p>
+        <p class="mt-6 border-t border-slate-200 pt-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-steel-400">Como podemos te atender</p>
+        <ul class="mt-3 space-y-1.5 text-[15px] text-navy-900">
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Abertura, alteração e encerramento</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Legalização e alvarás</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Inscrições e certificado digital</li>
+        </ul>
+        <a href="servicos.html#legalizacao" class="mt-6 inline-block text-sm font-semibold text-accent-600 transition group-hover:text-accent-700">Saiba mais &rarr;</a>
+      </article>
+
+      <article class="group flex flex-col bg-white p-8 transition hover:bg-slate-50">
+        <div class="flex items-start justify-between">
+          <svg class="h-6 w-6 text-navy-900" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 11h20M7 16h4"/></svg>
+          <span class="font-display text-sm text-steel-200">05</span>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-navy-900">BPO financeiro</h3>
+        <p class="mt-2.5 grow text-[15px] leading-relaxed">Assumimos a rotina de contas a pagar e a receber, com aprovação de pagamento sempre com você. O fechamento do mês deixa de ser corrida.</p>
+        <p class="mt-6 border-t border-slate-200 pt-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-steel-400">Como podemos te atender</p>
+        <ul class="mt-3 space-y-1.5 text-[15px] text-navy-900">
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Gestão de fluxo de caixa</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Conciliação bancária</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Pagamentos e recebimentos</li>
+        </ul>
+        <a href="servicos.html#bpo" class="mt-6 inline-block text-sm font-semibold text-accent-600 transition group-hover:text-accent-700">Saiba mais &rarr;</a>
+      </article>
+
+      <article class="group flex flex-col bg-white p-8 transition hover:bg-slate-50">
+        <div class="flex items-start justify-between">
+          <svg class="h-6 w-6 text-navy-900" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+          <span class="font-display text-sm text-steel-200">06</span>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-navy-900">Planejamento tributário</h3>
+        <p class="mt-2.5 grow text-[15px] leading-relaxed">Rodamos o seu faturamento real nos três regimes, considerando folha, margem e créditos. O resultado vem em planilha, com o imposto anual de cada cenário.</p>
+        <p class="mt-6 border-t border-slate-200 pt-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-steel-400">Como podemos te atender</p>
+        <ul class="mt-3 space-y-1.5 text-[15px] text-navy-900">
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Análise de regimes tributários</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Gestão de crédito tributário</li>
+          <li class="flex gap-2.5"><span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-600"></span>Recuperação tributária</li>
+        </ul>
+        <a href="servicos.html#tributario" class="mt-6 inline-block text-sm font-semibold text-accent-600 transition group-hover:text-accent-700">Saiba mais &rarr;</a>
+      </article>
+    </div>
+
+    <a href="servicos.html" class="mt-10 inline-flex items-center gap-2 rounded-md border border-slate-300 px-6 py-3.5 font-semibold text-navy-900 transition hover:border-navy-900">
+      Ver os 8 serviços, incluindo auditoria e IRPF
+    </a>
+  </div>
+</section>
+
+<!-- TROCA DE CONTADOR -->
+<section class="border-y border-slate-200 bg-slate-50 py-24">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-14 lg:grid-cols-2 lg:gap-20">
+      <div>
+        <p class="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-accent-600">
+          <span class="h-px w-8 bg-accent-600"></span>Por que a Bravus
+        </p>
+        <h2 class="mt-5 font-display text-3xl font-semibold leading-tight text-navy-900 sm:text-4xl">
+          Pronto para trocar de contador? A gente conduz a transição.
+        </h2>
+        <p class="mt-6 text-[17px] leading-relaxed">
+          A troca de contabilidade trava muita empresa por medo da burocracia. Na Bravus, nós solicitamos os arquivos, conferimos o histórico, identificamos pendências e assumimos a operação — sem parar o seu faturamento.
+        </p>
+      </div>
+
+      <dl class="divide-y divide-slate-200 border-t border-slate-200">
+        <div class="py-6">
+          <dt class="font-semibold text-navy-900">Levantamento antes de assumir</dt>
+          <dd class="mt-1.5 text-[15px] leading-relaxed">Analisamos a situação fiscal, contábil e trabalhista dos exercícios recentes e mapeamos o que está em aberto.</dd>
+        </div>
+        <div class="py-6">
+          <dt class="font-semibold text-navy-900">Transição conduzida por nós</dt>
+          <dd class="mt-1.5 text-[15px] leading-relaxed">Do pedido de documentos ao escritório anterior até a primeira entrega de obrigações no nosso nome.</dd>
+        </div>
+        <div class="py-6">
+          <dt class="font-semibold text-navy-900">Relatório que você entende</dt>
+          <dd class="mt-1.5 text-[15px] leading-relaxed">Todo mês, uma leitura do que mudou em margem, custo fixo e carga tributária — em linguagem de dono de empresa.</dd>
+        </div>
+        <div class="py-6">
+          <dt class="font-semibold text-navy-900">Um responsável com nome</dt>
+          <dd class="mt-1.5 text-[15px] leading-relaxed">Carteira limitada por contador, para que sempre exista alguém que conhece o seu negócio do outro lado.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ESPECIALIDADES -->
+<section class="bg-navy-900 py-24">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-8 lg:grid-cols-12">
+      <div class="lg:col-span-5">
+        <p class="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-accent-500">
+          <span class="h-px w-8 bg-accent-500"></span>Especialidades
+        </p>
+        <h2 class="mt-5 font-display text-3xl font-semibold leading-tight text-white sm:text-4xl">
+          Contabilidade que entende o seu setor
+        </h2>
+        <p class="mt-6 text-[17px] leading-relaxed text-steel-400">
+          Cada atividade tem regra fiscal, obrigação acessória e margem própria. Atendemos com times que já conhecem a sua.
+        </p>
+      </div>
+      <div class="lg:col-span-7">
+        <ul class="grid grid-cols-1 gap-x-10 sm:grid-cols-2">
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Prestadores de serviços</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Comércios</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Advogados</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Clínicas médicas e de estética</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Dentistas</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Farmácias</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Tecnologia e SaaS</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">E-commerce</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Restaurantes e food service</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Construção civil</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Transporte e logística</li>
+          <li class="border-b border-white/10 py-4 text-[15px] text-white">Holdings e investidores</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="py-24">
+  <div class="mx-auto max-w-7xl px-6">
+    <p class="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-accent-600">
+      <span class="h-px w-8 bg-accent-600"></span>Como funciona
+    </p>
+    <h2 class="mt-5 max-w-2xl font-display text-3xl font-semibold leading-tight text-navy-900 sm:text-4xl">
+      Três passos para sair do improviso
+    </h2>
+
+    <div class="mt-14 grid gap-px bg-slate-200 md:grid-cols-3">
+      <div class="bg-white p-8 lg:p-10">
+        <p class="font-display text-5xl font-semibold text-steel-200">01</p>
+        <h3 class="mt-6 text-lg font-semibold text-navy-900">Diagnóstico</h3>
+        <p class="mt-2.5 grow text-[15px] leading-relaxed">Conversamos sobre o negócio e analisamos faturamento, regime e pendências. Você recebe um parecer e uma proposta com valor fechado — sem custo e sem compromisso.</p>
+      </div>
+      <div class="bg-white p-8 lg:p-10">
+        <p class="font-display text-5xl font-semibold text-steel-200">02</p>
+        <h3 class="mt-6 text-lg font-semibold text-navy-900">Transição</h3>
+        <p class="mt-2.5 grow text-[15px] leading-relaxed">Pedimos a documentação ao contador anterior, conferimos o histórico e regularizamos o que estiver em aberto. A sua operação não para.</p>
+      </div>
+      <div class="bg-white p-8 lg:p-10">
+        <p class="font-display text-5xl font-semibold text-steel-200">03</p>
+        <h3 class="mt-6 text-lg font-semibold text-navy-900">Rotina mensal</h3>
+        <p class="mt-2.5 grow text-[15px] leading-relaxed">Guias, obrigações e relatórios no calendário combinado, com um contador dedicado no WhatsApp para as dúvidas do dia a dia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="border-y border-slate-200 bg-slate-50 py-24">
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="max-w-2xl font-display text-3xl font-semibold leading-tight text-navy-900 sm:text-4xl">
+      O que dizem sobre a Bravus
+    </h2>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+      <figure class="border-t-2 border-navy-900 bg-white p-8">
+        <blockquote class="font-display text-[19px] leading-relaxed text-navy-900">
+          “Trocamos de contabilidade com medo da burocracia e foi o contrário: eles conduziram tudo. No primeiro trimestre já identificaram crédito que a gente não aproveitava.”
+        </blockquote>
+        <figcaption class="mt-6 border-t border-slate-200 pt-5 text-sm">
+          <span class="block font-semibold text-navy-900">Marina Duarte</span>
+          <span class="text-steel-400">Sócia — clínica odontológica</span>
+        </figcaption>
+      </figure>
+      <figure class="border-t-2 border-navy-900 bg-white p-8">
+        <blockquote class="font-display text-[19px] leading-relaxed text-navy-900">
+          “O que mais pesa é ter alguém que responde. Mando a dúvida no WhatsApp e tenho resposta no mesmo dia, com explicação que eu entendo.”
+        </blockquote>
+        <figcaption class="mt-6 border-t border-slate-200 pt-5 text-sm">
+          <span class="block font-semibold text-navy-900">Rafael Nogueira</span>
+          <span class="text-steel-400">CEO — software house</span>
+        </figcaption>
+      </figure>
+      <figure class="border-t-2 border-navy-900 bg-white p-8">
+        <blockquote class="font-display text-[19px] leading-relaxed text-navy-900">
+          “A revisão de regime mudou o nosso caixa. Saímos do Simples para o Presumido com simulação na mão, não no achismo.”
+        </blockquote>
+        <figcaption class="mt-6 border-t border-slate-200 pt-5 text-sm">
+          <span class="block font-semibold text-navy-900">Cláudia Ferraz</span>
+          <span class="text-steel-400">Diretora — distribuidora</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-24">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-14 lg:grid-cols-12">
+      <div class="lg:col-span-4">
+        <p class="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-accent-600">
+          <span class="h-px w-8 bg-accent-600"></span>Dúvidas frequentes
+        </p>
+        <h2 class="mt-5 font-display text-3xl font-semibold leading-tight text-navy-900 sm:text-4xl">
+          Perguntas que todo empresário faz
+        </h2>
+        <a data-wa="Olá! Tenho uma dúvida sobre a contabilidade da minha empresa." href="#" class="mt-7 inline-block text-sm font-semibold text-accent-600 hover:text-accent-700">
+          Não achou a sua? Pergunte no WhatsApp &rarr;
+        </a>
+      </div>
+
+      <div class="lg:col-span-8">
+        <details open class="group border-t border-slate-200">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-[17px] font-semibold text-navy-900">
+            Trocar de contabilidade dá muito trabalho?
+            <svg class="h-5 w-5 shrink-0 text-accent-600 transition group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="pb-6 pr-10 text-[15px] leading-relaxed">Para você, quase nenhum. Nós solicitamos os arquivos ao escritório anterior, conferimos o histórico dos últimos exercícios e assumimos as obrigações do mês seguinte. A única coisa que pedimos é a assinatura das procurações e a liberação dos acessos.</p>
+        </details>
+        <details class="group border-t border-slate-200">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-[17px] font-semibold text-navy-900">
+            Posso trocar de contador a qualquer momento do ano?
+            <svg class="h-5 w-5 shrink-0 text-accent-600 transition group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="pb-6 pr-10 text-[15px] leading-relaxed">Sim. Não existe data obrigatória para a troca. O ideal é iniciar a transição com pelo menos dez dias de antecedência do fechamento do mês, para que nenhuma obrigação fique sem responsável.</p>
+        </details>
+        <details class="group border-t border-slate-200">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-[17px] font-semibold text-navy-900">
+            Vocês atendem empresas de outros estados?
+            <svg class="h-5 w-5 shrink-0 text-accent-600 transition group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="pb-6 pr-10 text-[15px] leading-relaxed">Sim. O atendimento é 100% digital, com assinatura eletrônica e certificado digital. Atendemos empresas em todo o Brasil, respeitando as particularidades fiscais de cada estado e município.</p>
+        </details>
+        <details class="group border-t border-slate-200">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-[17px] font-semibold text-navy-900">
+            Quanto custa a mensalidade?
+            <svg class="h-5 w-5 shrink-0 text-accent-600 transition group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="pb-6 pr-10 text-[15px] leading-relaxed">Depende do regime tributário, do volume de notas, do número de funcionários e dos serviços contratados. Por isso o diagnóstico é gratuito: a proposta sai com valor fechado, sem taxa surpresa ao longo do ano.</p>
+        </details>
+        <details class="group border-t border-slate-200">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-[17px] font-semibold text-navy-900">
+            Minha empresa está com pendências fiscais. Vocês assumem?
+            <svg class="h-5 w-5 shrink-0 text-accent-600 transition group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="pb-6 pr-10 text-[15px] leading-relaxed">Assumimos. Fazemos o levantamento dos débitos e das obrigações em atraso, apresentamos um plano de regularização com prazos e custos e executamos junto com a rotina mensal.</p>
+        </details>
+        <details class="group border-y border-slate-200">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-[17px] font-semibold text-navy-900">
+            Existe fidelidade ou multa de cancelamento?
+            <svg class="h-5 w-5 shrink-0 text-accent-600 transition group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="pb-6 pr-10 text-[15px] leading-relaxed">Não trabalhamos com fidelidade. Se decidir sair, entregamos toda a documentação contábil e fiscal organizada, no prazo previsto em contrato.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO (última seção da home) -->
+<section id="contato" class="scroll-mt-24 bg-navy-950 py-24">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-14 lg:grid-cols-12 lg:items-start">
+
+      <div class="lg:col-span-6">
+        <p class="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-accent-500">
+          <span class="h-px w-8 bg-accent-500"></span>Fale com a Bravus
+        </p>
+        <h2 class="mt-5 font-display text-3xl font-semibold leading-tight text-white sm:text-4xl">
+          Pronto para ter uma contabilidade que te dá resposta?
+        </h2>
+        <p class="mt-6 max-w-xl text-lg leading-relaxed text-steel-200">
+          Agende o diagnóstico gratuito e descubra, em números, onde a sua empresa está perdendo dinheiro em imposto. Termina com um parecer objetivo e uma proposta de valor fechado — mesmo que você decida não contratar.
+        </p>
+
+        <dl class="mt-12 divide-y divide-white/10 border-y border-white/10">
+          <div class="flex items-start gap-4 py-5">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-accent-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 01-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 012.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+            <div>
+              <dt class="font-semibold text-white">WhatsApp</dt>
+              <dd class="mt-0.5 text-[15px] text-steel-400">O caminho mais rápido — <a data-wa="Olá! Quero agendar o diagnóstico contábil gratuito." href="#" class="text-accent-500 underline-offset-4 hover:underline">abrir conversa</a></dd>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 py-5">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .3 1.9.6 2.8a2 2 0 01-.4 2.1L8 9.8a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.4c.9.3 1.8.5 2.8.6a2 2 0 011.7 2z"/></svg>
+            <div>
+              <dt class="font-semibold text-white">Telefone</dt>
+              <dd class="mt-0.5 text-[15px] text-steel-400"><a data-tel href="#" class="transition hover:text-white">(11) 3000-0000</a> &middot; seg a sex, 9h às 18h</dd>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 py-5">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
+            <div>
+              <dt class="font-semibold text-white">E-mail</dt>
+              <dd class="mt-0.5 text-[15px] text-steel-400"><a data-email href="#" class="transition hover:text-white">contato@bravuscontabil.com.br</a></dd>
+            </div>
+          </div>
+        </dl>
+
+        <p class="mt-8 text-[15px] text-steel-400">
+          Precisa detalhar mais? <a href="contato.html" class="text-accent-500 underline-offset-4 hover:underline">Formulário completo na página de contato</a>.
+        </p>
+      </div>
+
+      <div class="lg:col-span-6">
+        <form data-wa-form class="rounded-lg bg-white p-8 shadow-2xl shadow-black/40 sm:p-10">
+          <h3 class="font-display text-2xl font-semibold text-navy-900">Receba uma proposta</h3>
+          <p class="mt-1.5 text-sm text-steel-600">Resposta em até 1 dia útil, direto no seu WhatsApp.</p>
+
+          <div class="mt-7 space-y-4">
+            <div>
+              <label for="h-nome" class="mb-1.5 block text-xs font-semibold text-navy-900">Nome</label>
+              <input id="h-nome" name="Nome" type="text" required autocomplete="name"
+                     class="w-full rounded-md border border-slate-300 px-3.5 py-2.5 text-[15px] text-navy-900 outline-none transition focus:border-accent-600 focus:ring-2 focus:ring-accent-600/20">
+            </div>
+            <div>
+              <label for="h-empresa" class="mb-1.5 block text-xs font-semibold text-navy-900">Empresa</label>
+              <input id="h-empresa" name="Empresa" type="text" required autocomplete="organization"
+                     class="w-full rounded-md border border-slate-300 px-3.5 py-2.5 text-[15px] text-navy-900 outline-none transition focus:border-accent-600 focus:ring-2 focus:ring-accent-600/20">
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="h-tel" class="mb-1.5 block text-xs font-semibold text-navy-900">WhatsApp</label>
+                <input id="h-tel" name="WhatsApp" type="tel" required autocomplete="tel" placeholder="(00) 00000-0000"
+                       class="w-full rounded-md border border-slate-300 px-3.5 py-2.5 text-[15px] text-navy-900 outline-none transition focus:border-accent-600 focus:ring-2 focus:ring-accent-600/20">
+              </div>
+              <div>
+                <label for="h-regime" class="mb-1.5 block text-xs font-semibold text-navy-900">Regime</label>
+                <select id="h-regime" name="Regime"
+                        class="w-full rounded-md border border-slate-300 bg-white px-3.5 py-2.5 text-[15px] text-navy-900 outline-none transition focus:border-accent-600 focus:ring-2 focus:ring-accent-600/20">
+                  <option>Simples Nacional</option><option>Lucro Presumido</option><option>Lucro Real</option><option>MEI</option><option>Ainda vou abrir</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="h-serv" class="mb-1.5 block text-xs font-semibold text-navy-900">Do que você precisa?</label>
+              <select id="h-serv" name="Necessidade"
+                      class="w-full rounded-md border border-slate-300 bg-white px-3.5 py-2.5 text-[15px] text-navy-900 outline-none transition focus:border-accent-600 focus:ring-2 focus:ring-accent-600/20">
+                <option>Trocar de contabilidade</option><option>Abrir empresa</option><option>Planejamento tributário</option>
+                <option>Folha e departamento pessoal</option><option>Regularizar pendências fiscais</option><option>Outro assunto</option>
+              </select>
+            </div>
+            <div>
+              <label for="h-msg" class="mb-1.5 block text-xs font-semibold text-navy-900">Mensagem <span class="font-normal text-steel-400">(opcional)</span></label>
+              <textarea id="h-msg" name="Mensagem" rows="3" placeholder="Conte rapidamente a situação da sua empresa."
+                        class="w-full rounded-md border border-slate-300 px-3.5 py-2.5 text-[15px] text-navy-900 outline-none transition focus:border-accent-600 focus:ring-2 focus:ring-accent-600/20"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="mt-7 w-full rounded-md bg-navy-900 px-6 py-3.5 font-semibold text-white transition hover:bg-navy-700">
+            Quero minha proposta
+          </button>
+          <p class="mt-3 text-center text-xs text-steel-400">Seus dados são usados apenas para este contato, conforme a LGPD.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy-900 pt-16">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-12 pb-14 md:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="assets/bravus-emblema.png" alt="" class="h-12 w-auto">
+          <span class="leading-none">
+            <span class="block font-wordmark text-[1.35rem] font-bold tracking-[0.1em] text-white">BRAVUS</span>
+            <span class="mt-2 block text-[0.62rem] font-medium uppercase tracking-[0.3em] text-steel-400">Assessoria Contábil</span>
+          </span>
+        </div>
+        <p class="mt-6 max-w-xs text-[15px] leading-relaxed text-steel-400">
+          Assessoria contábil para empresas que querem crescer com segurança fiscal e informação confiável.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">Serviços</h3>
+        <ul class="mt-5 space-y-2.5 text-[15px] text-steel-400">
+          <li><a href="servicos.html#contabil" class="transition hover:text-white">Contábil</a></li>
+          <li><a href="servicos.html#fiscal" class="transition hover:text-white">Fiscal</a></li>
+          <li><a href="servicos.html#folha" class="transition hover:text-white">Folha de pagamento</a></li>
+          <li><a href="servicos.html#legalizacao" class="transition hover:text-white">Legalização e societário</a></li>
+          <li><a href="servicos.html#bpo" class="transition hover:text-white">BPO financeiro</a></li>
+          <li><a href="servicos.html#auditoria" class="transition hover:text-white">Auditoria</a></li>
+          <li><a href="servicos.html#tributario" class="transition hover:text-white">Planejamento tributário</a></li>
+          <li><a href="servicos.html#irpf" class="transition hover:text-white">Declaração de IRPF</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">Empresa</h3>
+        <ul class="mt-5 space-y-2.5 text-[15px] text-steel-400">
+          <li><a href="sobre.html" class="transition hover:text-white">A Bravus</a></li>
+          <li><a href="index.html#faq" class="transition hover:text-white">Dúvidas frequentes</a></li>
+          <li><a href="contato.html" class="transition hover:text-white">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">Fale conosco</h3>
+        <ul class="mt-5 space-y-2.5 text-[15px] text-steel-400">
+          <li><a data-tel href="#" class="transition hover:text-white">(11) 3000-0000</a></li>
+          <li><a data-email href="#" class="transition hover:text-white">contato@bravuscontabil.com.br</a></li>
+          <li><a data-wa="Olá! Vim pelo site da Bravus." href="#" class="transition hover:text-white">WhatsApp</a></li>
+          <li>Seg a sex, 9h às 18h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-between gap-3 border-t border-white/10 py-7 text-[13px] text-steel-400 sm:flex-row">
+      <p>&copy; 2026 Bravus Assessoria Contábil &middot; CRC 0.000.000/O-0 &middot; CNPJ 00.000.000/0001-00</p>
+      <p>Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<a data-wa="Olá! Vim pelo site da Bravus." href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"
+   class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-wa text-white shadow-lg shadow-wa/30 transition hover:scale-105">
+  <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 01-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 012.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+</a>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

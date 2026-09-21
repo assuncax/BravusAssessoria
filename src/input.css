@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@source "../*.html";
+
+/* ---------------------------------------------------------------------------
+   Varoste (Vintage Moderno) — fonte da marca.
+   Arquivo comercial: solte-o em assets/fonts/ com um dos nomes abaixo.
+   Enquanto não existir, o navegador cai nos fallbacks e nada quebra.
+   Detalhes em assets/fonts/LEIA-ME.txt
+   --------------------------------------------------------------------------- */
+@font-face {
+  font-family: "Varoste";
+  src: url("fonts/varoste.woff2") format("woff2"),
+       url("fonts/varoste.woff")  format("woff"),
+       url("fonts/varoste.otf")   format("opentype"),
+       url("fonts/varoste.ttf")   format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Varoste", "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-wordmark: "Varoste", "Cinzel", Georgia, serif;
+
+  --color-navy-950: #060B16;
+  --color-navy-900: #0B1220;
+  --color-navy-800: #121C30;
+  --color-navy-700: #1D2B45;
+  --color-navy-600: #2A3C5C;
+
+  --color-steel-600: #48576E;
+  --color-steel-400: #8494AB;
+  --color-steel-200: #C7D0DC;
+
+  --color-accent-700: #163B6B;
+  --color-accent-600: #1F4E8C;
+  --color-accent-500: #2E6BB8;
+
+  --color-wa: #25D366;
+}
+
+/* tipografia base */
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+  body { -webkit-font-smoothing: antialiased; }
+  summary::-webkit-details-marker { display: none; }
+}

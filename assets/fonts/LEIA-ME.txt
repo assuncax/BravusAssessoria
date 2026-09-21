@@ -1,0 +1,38 @@
+FONTE VAROSTE
+=============
+
+A Varoste (Vintage Moderno) e uma fonte comercial de marketplace -- nao esta no
+Google Fonts nem pode ser redistribuida aqui. Voce precisa do arquivo licenciado.
+
+COMO ATIVAR
+-----------
+1. Baixe a Varoste com licenca WEBFONT (nao a "desktop only").
+2. Coloque o arquivo NESTA pasta com um destes nomes, em minusculo:
+
+      varoste.woff2   <- preferencia (menor e mais rapido)
+      varoste.woff
+      varoste.otf
+      varoste.ttf
+
+   Se o arquivo vier como "Varoste-Regular.otf", basta renomear para "varoste.otf".
+
+3. Pronto. Nao precisa mexer no codigo -- o @font-face ja aponta para esses nomes.
+
+SE VOCE SO TEM .OTF OU .TTF
+---------------------------
+Funciona, mas o arquivo e mais pesado. Para converter para .woff2 sem instalar
+nada, use https://cloudconvert.com/otf-to-woff2
+
+ONDE A VAROSTE E USADA
+----------------------
+- Wordmark "BRAVUS" no cabecalho e no rodape
+- Titulos grandes (h1, h2) e os numeros dos indicadores
+
+O texto corrido continua em Inter, de proposito: fonte vintage display em
+paragrafo longo cansa a leitura e derruba a conversao. Se quiser a Varoste
+tambem no corpo, e so pedir.
+
+ENQUANTO O ARQUIVO NAO CHEGA
+----------------------------
+O site cai automaticamente para Cinzel (wordmark) e Source Serif 4 (titulos).
+Nada quebra.
