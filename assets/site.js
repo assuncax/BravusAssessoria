@@ -3,9 +3,11 @@
    Troque os valores abaixo pelos dados reais. É o único lugar que muda.
    ====================================================================== */
 const BRAVUS = {
-  whatsapp: "5511999999999",              // TODO: DDI + DDD + número, só dígitos
-  email: "contato@bravuscontabil.com.br", // TODO
-  telefone: "(11) 3000-0000",             // TODO
+  whatsapp: "5511959755162",              // DDI + DDD + número, só dígitos
+  email: "Bravus.contabil@outlook.com",
+  telefone: "(11) 95975-5162",
+  telefone2: "(11) 91248-3336",
+  instagram: "bravus.contabil",
 };
 
 /* ---------- Menu mobile ---------- */
@@ -42,9 +44,15 @@ document.querySelectorAll("form[data-wa-form]").forEach((form) => {
 });
 
 /* ---------- Preenche contatos no HTML ---------- */
-document.querySelectorAll("[data-tel]").forEach((el) => {
-  el.textContent = BRAVUS.telefone;
-  el.href = "tel:+55" + BRAVUS.telefone.replace(/\D/g, "");
+[["[data-tel]", BRAVUS.telefone], ["[data-tel2]", BRAVUS.telefone2]].forEach(([sel, tel]) => {
+  document.querySelectorAll(sel).forEach((el) => {
+    el.textContent = tel;
+    el.href = "tel:+55" + tel.replace(/\D/g, "");
+  });
+});
+document.querySelectorAll("[data-instagram]").forEach((el) => {
+  el.textContent = "@" + BRAVUS.instagram;
+  el.href = "https://www.instagram.com/" + BRAVUS.instagram;
 });
 document.querySelectorAll("[data-email]").forEach((el) => {
   el.textContent = BRAVUS.email;
